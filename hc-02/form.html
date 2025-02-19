@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+
+    <form action="result.html" method="get">
+
+
+
+        <label for="fname">username:</label> <br>
+        <input type="text" id="fname" name="isim" placeholder="adınız..."> <br>
+        <label for="sname">surname:</label> <br>
+        <input type="text" id="sname" name="soyisim" placeholder="soyadınız...">
+
+        <div>
+            <label for="sifre">Password</label><br>
+            <input type="password" name="parola" id="sifre" placeholder="şifre...">
+        </div> <br>
+
+        <!-- radio -->
+
+        <div>
+            <label for="">Gender</label> <br>
+            <label for="gender1">Male</label>
+            <input type="radio" name="cinsiyet" id="gender1" value="erkek" checked>
+            <label for="gender2">Female</label>
+            <input type="radio" name="cinsiyet" id="gender2" value="kadin">
+            <label for="gender3">Other</label>
+            <input type="radio" name="cinsiyet" id="gender3" value="diger">
+            <div>
+
+        <div>
+                <br>
+                <label> Select Fav Animals</label><br>
+                <input type="checkbox" name="animal-1" id="panda" checked>
+                <label for="panda">Panda</label>
+                <input type="checkbox" name="animal-2" id="balık">
+                <label for="panda">Balık</label>
+                <input type="checkbox" name="animal-3" id="kedi">
+                <label for="panda">Kedi</label>
+                <input type="checkbox" name="animal-4" id="kuş">
+                <label for="panda">Kuş</label>
+        </div><br>
+
+        <div>
+            <label for="age">Age</label> <br>
+            <input type="number" name="yaş" id="age" step="0" min="18" max="45" placeholder="yaş..." style="width: 150px;" required >
+
+
+        </div>
+
+
+
+
+
+
+
+        <br><br><br><br>
+        <input type="reset" value="reset">
+        <input type="submit" value="send">
+
+    </form>
+
+</body>
+</html>
