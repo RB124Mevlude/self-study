@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        #seker{
+            border: 5px solid red;
+            width: 250px;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4WS3JqNM6qJak-zhK0u7wMaL-tatTr-DMNg&s");
+            background-size: cover;
+            background-position: center;
+            color: yellow;
+            text-shadow: 5px 5px 5px black;
+        }
+    </style>
+
+
 </head>
 <body>
     <h1>HTML Forms</h1>
@@ -49,18 +63,120 @@
 
         <div>
             <label for="age">Age</label> <br>
-            <input type="number" name="yaş" id="age" step="0" min="18" max="45" placeholder="yaş..." style="width: 150px;" required >
+            <input type="number" name="yaş" id="age" step="0" min="18" max="45" placeholder="yaş..." style="width: 150px;" >
+        </div><br>
+
+        <div>
+            <label for="ara">Search</label><br>
+            <input type="search" name="arandi" id="ara" placeholder="ara...">
+        </div><br>
+
+        <div>
+            <label for="renk">Color</label>
+            <input type="color" name="seçilen-renk" id="renk">
+        </div><br>
+        
+        <div>
+            <label for="tarih">Date</label>
+            <input type="date" name="secileen--tarih" id="tarih" min="29.10.1987" max="01.01.2050">
+        </div><br>
+
+        <div>
+            <label for="mail">Email</label>
+            <input type="email" name="mail-adresi" id="mail">
+        </div><br>
+
+        <div>
+            <label for="dosya">Dosya Seç</label>
+            <input type="file" name="secilen-dosya" id="file"
+        </div><br><br>
 
 
+        <div>
+            <label for="tel">Phone</label>
+            <input type="tel" name="tel-no" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            placeholder="xxx-xxx-xx-xx" maxlength="12">
+        </div><br>
+        <hr><br>
+
+        <div>
+            <label for="tatli">Hangi tatlıyı seversin</label><br>
+            <select name="secilen-tatli" id="tatli" size="7" multiple>
+                <option value="Sütlaç">Sütlaç</option>
+                <option value="Keşkül">Keşkül</option>
+                <option value="Süpangle">Süpangle</option>
+                <option value="Aşure">Aşure</option>
+                <option value="Güllaç">Güllaç</option>
+                <option value="Mangolia">Mangolia</option>
+            </select>
+        </div>
+        <hr><br>
+
+        <div>
+            <label for="seker">Hangi tatlıları seversiniz</label>
+            <br>
+            <select name="secilen_tatlı" id="seker" size="15" multiple>
+                <optgroup label="sütlü tatlılar">
+                    <option value="Sütlaç">Sütlaç</option>
+                    <option value="Keşkül">Keşkül</option>
+                    <option value="Süpangle">Süpangle</option>
+                    <option value="Aşure">Aşure</option>
+                    <option value="Magnolia">Magnolia</option>
+                    <option value="Güllaç">Güllaç</option>
+                </optgroup>
+
+                <optgroup label="şerbetli tatlılar">
+                    <option value="Baklava">Baklava</option>
+                    <option value="Künefe">Künefe</option>
+                    <option value="Katmer">Katmer</option>
+                    <option value="tulumba">tulumba</option>
+                    <option value="Afyon Kadayıfı">Afyon Kadayıfı</option>
+                </optgroup>
+
+                <optgroup label="çikolatalı tatlılar">
+                    <option value="Waffle">Waffle</option>
+                    <option value="Mousse">Mousse</option>
+                    <option value="Pasta">Pasta</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <label for="yorum">Yorum</label> <br>
+            <textarea name="girilen_yorum" id="yorum" style="resize: none; width: 50%; height: 100px;"></textarea>
+        </div>
+
+        <div>
+            <label for="">Hangi Browser kullanıyorsun</label>
+            <br>
+            <input type="text" name="Kullanılan Browser" id="input-Browser" list="browser">
+
+            <datalist id="browser">
+                <option value="Opera"></option>
+                <option value="Firefox"></option>
+                <option value="Chrome"></option>
+                <option value="Safari"></option>
+                <option value="Brave"></option>
+            </datalist>
+        </div>
+
+        <br>
+
+        <div>
+            <fieldset>
+                <legend>Kişisel bilgiler</legend>
+                <label for="fname">username:</label> <br>
+                <input type="text" id="fname" name="isim" placeholder="adınız.."><br>
+                <label for="sname">surname:</label> <br>
+                <input type="text" id="sname" name="soyisim" placeholder="soyadınız...">
+            </fieldset>
         </div>
 
 
 
 
 
-
-
-        <br><br><br><br>
+        <br><br><br><br><br><br><br><br><br>
         <input type="reset" value="reset">
         <input type="submit" value="send">
 
